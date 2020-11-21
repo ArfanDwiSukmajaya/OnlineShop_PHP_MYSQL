@@ -27,7 +27,7 @@
   </div>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn "onclick="closeNav()">&times</a>
-    <img src="../foto/arfan.png" alt="">
+    <img src="../foto/arfan.jpg" alt="">
     <p>Selamat Datang</p>
     <h3><?= "$ra[namalengkap]" ?></h3>
     <hr><a href="<?= "?p=home"; ?>">Beranda</a>
