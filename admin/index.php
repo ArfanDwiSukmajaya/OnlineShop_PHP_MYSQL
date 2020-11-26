@@ -53,6 +53,14 @@
           include "kategoriedit.php";
         }else if($_GET["p"]== "kategoridel"){
           include "kategoridel.php";
+        }else if($_GET["p"]== "produk"){
+          include "produk.php";
+        }else if($_GET["p"]== "produkadd"){
+          include "produkadd.php";
+        }else if($_GET["p"]== "produkedit"){
+          include "produkedit.php";
+        }else if($_GET["p"]== "produkdel"){
+          include "produkdel.php";
         }else{
           include "home.php";
         } 
