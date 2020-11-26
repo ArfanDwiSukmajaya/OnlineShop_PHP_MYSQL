@@ -1,6 +1,6 @@
 <div id="signin">
   <fieldset>
-  <img src="../foto/arfan.png" width="120px" alt="">
+  <img src="../foto/arfan.jpg" width="120px" alt="">
   <form action="" method="post" name="form1" enctype="multipart/form-data">
     <h3>Administrator</h3>
     <p>Silahkan Login</p>
