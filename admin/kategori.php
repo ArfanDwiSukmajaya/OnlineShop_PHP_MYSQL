@@ -19,19 +19,19 @@
         <div class='card'>
           <div class='isicard'>
           <br>
-
           <big>$rk[namakat]</big><div class='badge'></div>
-
+          <br>
           $rk[ketkat]
           <br>
           <br>
           <small>
-            <i>Dibuat pada $rk[tglkat] WIB
-              <br>
-              Oleh $ra[namalengkap]
-            </i>
+          <i>Dibuat pada $rk[tglkat] WIB
+          <br>
+          Oleh $ra[namalengkap]
+          </i>
           </small>
           </div>
+          <hr>
           <div class='kakicard'>
             <br>
             <a href='?p=kategoriedit&id=$rk[idkat]'>
