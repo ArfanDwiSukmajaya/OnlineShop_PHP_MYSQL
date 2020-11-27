@@ -91,14 +91,14 @@
 
         if($halaman < $jmlhal){
           $next = $halaman + 1;
-          echo "<span class='kotak'><a href='?p=produk&pg=$next'>&raquo; Next</a></span>";
+          echo "<span class='kotak'><a href='?p=produk&pg=$next'>&raquo; Next</a></span> <br>";
         }else{
           echo "<span class='kotak'>Next &raquo</span>";
         }
 
   echo "
         Total Produk <span class='kotak'><b>$jmldata</b></span>
-        </div>
         <p>&nbsp;</p>
+        </div>
         ";
 ?>

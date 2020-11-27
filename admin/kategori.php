@@ -10,7 +10,7 @@
   
   while ($rk = mysqli_fetch_array($sqlk)) {
 
-    $sqlp = mysqli_query($kon, "SELECT * from produk WHERE idkat='$rk[idkat]'");
+    $sqlp = mysqli_query($kon, "SELECT * from produk WHERE id_kat='$rk[id_kat]'");
 
     // $rowp = mysqli_num_rows($sqlp);
     
@@ -34,10 +34,10 @@
           <hr>
           <div class='kakicard'>
             <br>
-            <a href='?p=kategoriedit&id=$rk[idkat]'>
+            <a href='?p=kategoriedit&id=$rk[id_kat]'>
               <button type='button' class='btn btn-add'>Ubah Kategori</button>
             </a>
-            <a href='?p=kategoridel&id=$rk[idkat]'>
+            <a href='?p=kategoridel&id=$rk[id_kat]'>
               <button type='button' class='btn btn-add'>Hapus Kategori</button>
             </a>
           </div>

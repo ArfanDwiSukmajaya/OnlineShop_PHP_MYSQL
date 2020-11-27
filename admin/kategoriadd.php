@@ -19,7 +19,7 @@
     <?php 
       if(isset($_POST["simpan"])){
         if(!empty($_POST["namakat"]) and !empty($_POST["ketkat"])){
-          $sqlk = mysqli_query($kon, "INSERT INTO kategori (idadmin, namakat, ketkat, tglkat) VALUES ('$ra[idadmin]', '$_POST[namakat]', '$_POST[ketkat]', NOW() )");
+          $sqlk = mysqli_query($kon, "INSERT INTO kategori (id_admin, namakat, ketkat, tglkat) VALUES ('$ra[id_admin]', '$_POST[namakat]', '$_POST[ketkat]', NOW() )");
           if($sqlk){
             echo "Kategori Berhasil Disimpan";
           }else{
