@@ -16,12 +16,12 @@
   $sqlp = mysqli_query($kon, "SELECT * FROM produk ORDER BY tglproduk DESC limit $posisi, $batas");
 
   while($rp = mysqli_fetch_array($sqlp)){
-    $sqlk = mysqli_query($kon, "SELECT * FROM kategori WHERE idkat = '$rp[idkat]'");
+    $sqlk = mysqli_query($kon, "SELECT * FROM kategori WHERE id_kat = '$rp[id_kat]'");
     $rk = mysqli_fetch_array($sqlk);
     $hrg = number_format($rp["harga"]);
     $nm = substr($rp["nama"], 0, 25);
 
-    if($rp["stok"] > 0){
+    if($rp["stock"] > 0){
       $stok = "<font color='#00CC00'>Stok Tersedia</font>";
     }else{
       $stok = "<font color='#FF0000'>Stok Habis</font>";
@@ -61,9 +61,9 @@
               </div>
               <div class='kakicard'>
                 <br>
-                <a href='?p=produkdetail&id=$rp[idproduk]'><button type='button' class='btn btn-add'>Detail</button></a>
-                <a href='?p=produkedit&id=$rp[idproduk]'><button type='button' class='btn btn-add'>Ubah Produk</button></a>
-                <a href='?p=produkdel&id=$rp[idproduk]'><button type='button' class='btn btn-add'>Hapus Produk</button></a>
+                <a href='?p=produkdetail&id=$rp[id_produk]'><button type='button' class='btn btn-add'>Detail</button></a>
+                <a href='?p=produkedit&id=$rp[id_produk]'><button type='button' class='btn btn-add'>Ubah Produk</button></a>
+                <a href='?p=produkdel&id=$rp[id_produk]'><button type='button' class='btn btn-add'>Hapus Produk</button></a>
               </div>`
             </div> <br>
           </div>";
@@ -76,7 +76,7 @@
   echo "
         <div class='dh12' align='right'>
           Halaman";
-        for ($i=1; $i < $jmlhal; $i++) { 
+        for ($i=1; $i <= $jmlhal; $i++) { 
           if($i == $halaman){
             echo "<span class='kotak'><b>$i</b></span>";
           }
