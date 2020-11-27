@@ -1,6 +1,6 @@
 <?php 
 
-  $sqlk = mysqli_query($kon, "DELETE FROM kategori WHERE idkat='$_GET[id]'");
+  $sqlk = mysqli_query($kon, "DELETE FROM kategori WHERE id_kat='$_GET[id]'");
 
   if($sqlk){
     echo "Katerogi berhasil dihapus";

@@ -4,7 +4,7 @@
 <?php 
 
   $batas = 8;
-  // $halaman = $_GET["pg"];
+  $halaman = $_GET["pg"];
   
   if(empty($halaman)){
     $posisi = 0;

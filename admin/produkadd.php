@@ -16,7 +16,7 @@
     ?>
     <input type="text" name="nama" id="nama" placeholder="Nama Produk">
     <input type="text" name="harga" id="harga" placeholder="Harga Pprduk (IDR)">
-    <input type="text" name="stok" id="stock" placeholder="Stok Produk">
+    <input type="text" name="stock" id="stock" placeholder="Stok Produk">
     <textarea name="spesifikasi" id="spesifikasi" placeholder="Spesifikasi Produk"></textarea>
     <textarea name="detail" id="detail" placeholder="Detail Produk"></textarea>
     <input type="text" name="diskon" id="diskon" placeholder="Diskon (%)">
@@ -51,7 +51,7 @@
             } else {
                 echo "Gagal Menyimpan";
             }
-            echo "<META HTTP-EQUIV='Refresh' Content='1; URL=?p=produk'>";
+            // echo "<META HTTP-EQUIV='Refresh' Content='1; URL=?p=produk'>";
         } else {
             echo "DATA HARUS DIISI DENGAN LENGKAP!";
         }
