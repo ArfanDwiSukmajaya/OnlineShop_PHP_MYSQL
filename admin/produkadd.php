@@ -51,7 +51,7 @@
             } else {
                 echo "Gagal Menyimpan";
             }
-            // echo "<META HTTP-EQUIV='Refresh' Content='1; URL=?p=produk'>";
+            echo "<META HTTP-EQUIV='Refresh' Content='1; URL=?p=produk'>";
         } else {
             echo "DATA HARUS DIISI DENGAN LENGKAP!";
         }

@@ -1,6 +1,6 @@
 <?php 
 
-  $sqlk = mysqli_query($kon, "SELECT * FROM kategori WHERE idkat='$_GET[id]'");
+  $sqlk = mysqli_query($kon, "SELECT * FROM kategori WHERE id_kat='$_GET[id]'");
   $rk = mysqli_fetch_array($sqlk);
 
 ?>
@@ -14,7 +14,7 @@
   <div class="kepalacard">Ubah Kategori</div>
   <div class="isicard" style="text-align:center">
     <form action="" name="form1" method="post" enctype="multipart/form-data">
-      <input type="hidden" name="idkat" id="idkat" value="<?= "$rk[idkat]"?>">
+      <input type="hidden" name="id_kat" id="id_kat" value="<?= "$rk[id_kat]"?>">
       <input type="text" name="namakat" id="namakat" value="<?= "$rk[namakat]"?>">
       <textarea name="ketkat" id="ketkat" placeholder="Keterangan Kategori"><?= "$rk[ketkat]"; ?></textarea>
       <br>
@@ -23,7 +23,7 @@
     <?php 
       if(isset($_POST["simpan"])){
         if(!empty($_POST["namakat"]) and !empty($_POST["ketkat"])){
-          $sqlk = mysqli_query($kon, "UPDATE kategori SET namakat='$_POST[namakat]', ketkat='$_POST[ketkat]' WHERE idkat='$_POST[idkat]'");
+          $sqlk = mysqli_query($kon, "UPDATE kategori SET namakat='$_POST[namakat]', ketkat='$_POST[ketkat]' WHERE id_kat='$_POST[id_kat]'");
           if($sqlk){
             echo "Kategori Berhasil Disimpan";
           }else{
