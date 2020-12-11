@@ -20,20 +20,18 @@
           <div class='isicard'>
           <br>
           <big>$rk[namakat]</big><div class='badge'></div>
-          <br>
+          <hr>
           $rk[ketkat]
-          <br>
-          <br>
+          <hr>
           <small>
           <i>Dibuat pada $rk[tglkat] WIB
-          <br>
+          <hr>
           Oleh $ra[namalengkap]
           </i>
           </small>
           </div>
           <hr>
           <div class='kakicard'>
-            <br>
             <a href='?p=kategoriedit&id=$rk[id_kat]'>
               <button type='button' class='btn btn-add'>Ubah Kategori</button>
             </a>

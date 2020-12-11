@@ -4,7 +4,7 @@
 <?php 
 
   $batas = 8;
-  $halaman = $_GET["pg"];
+  // $halaman = $_GET["pg"];
   
   if(empty($halaman)){
     $posisi = 0;
@@ -47,16 +47,18 @@
                 <img src='../fotoproduk/$rp[foto1]' border='1' width='100px'>
                 <img src='../fotoproduk/$rp[foto2]' border='1' width='100px'>
                 <br>
+                <br>
                 <big>$nm</big>
-                <br> IDR $hrgbr</br> $diskon $hrglama
-                <br>
+                <hr> IDR $hrgbr $diskon $hrglama
+                <hr>
                 <b>$stok</b>
-                <br>
+                <hr>
                 <small>
                   <i>Dibuat pada $rp[tglproduk] WIB
-                  <br>
+                  <hr>
                   oleh $ra[namalengkap]
                   </i>
+                  <hr>
                 </small>
               </div>
               <div class='kakicard'>
@@ -75,7 +77,7 @@
   $jmlhal = ceil($jmldata / $batas);
   echo "
         <div class='dh12' align='right'>
-          Halaman";
+          Halaman ";
         for ($i=1; $i <= $jmlhal; $i++) { 
           if($i == $halaman){
             echo "<span class='kotak'><b>$i</b></span>";
@@ -97,7 +99,7 @@
         }
 
   echo "
-        Total Produk <span class='kotak'><b>$jmldata</b></span>
+        Total Produk  <span class='kotak'><b>$jmldata</b></span>
         <p>&nbsp;</p>
         </div>
         ";
