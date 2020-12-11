@@ -20,8 +20,10 @@
   <div class="grid">
     <div class="dh12">
       <div class="container1">
-        <span style="font-size:20px;cursor:pointer; padding-right:15px" onclick="openNav()">&#9776</span>
-        <a href="<?echo "?p=home"; ?>">ADS Online Shop Admin</a>
+        <div class="title">
+          <span style="font-size:20px;cursor:pointer; padding-right:15px" onclick="openNav()">&#9776</span>
+          <a href="<?echo "?p=home"; ?>">ADS Online Shop Admin</a>
+        </div>
       </div>
     </div>
   </div>
@@ -61,11 +63,23 @@
           include "produkedit.php";
         }else if($_GET["p"]== "produkdel"){
           include "produkdel.php";
+        }else if($_GET["p"]== "jasakirim"){
+          include "jasakirim.php";
+        }else if($_GET["p"]== "jasakirimadd"){
+          include "jasakirimadd.php";
+        }else if($_GET["p"]== "jasakirimedit"){
+          include "jasakirimedit.php";
+        }else if($_GET["p"]== "jasakirimdel"){
+            include "jasakirimdel.php";
+          }else if($_GET["p"]== "anggota"){
+          include "anggota.php";
+        }else if($_GET["p"]== "anggotadel"){
+          include "anggotadel.php";
         }else{
           include "home.php";
         } 
-    
         ?>
+
       </div>
     </div>
   </div>
@@ -82,7 +96,7 @@
   <div class="grid">
     <div class="dh12">
       <div class="container3">
-        Copyright &copy; Arfan Dwi Sukmajaya, 2020
+      <p>Copyright &copy; Arfan Dwi Sukmajaya, 2020</p>
       </div>
     </div>
   </div>
