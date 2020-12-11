@@ -172,16 +172,20 @@ input[type="submit"]{
 
 .container1{
   background-color: #005555;
-  height:40px;
+  height:10vh;
   width:100%;
   color: #ffffff;
   font-family: sans-serif;
   font-size:20px;
   padding-left: 20px;
-  padding-top:20px;
-  padding-bottom:10px;
+  /* padding-top:20px; */
+  /* padding-bottom:10px; */
   position:fixed;
   z-index: 1;
+}
+
+.title {
+  line-height:10vh;
 }
 
 .container1 a{color:#ffffff; text-decoration:none}
@@ -189,8 +193,10 @@ input[type="submit"]{
 
 .container2{
   background-color:#ffffff;
-  margin-top:70px;
-  padding:20px;
+  min-height: 80vh;
+  margin-top:12vh;
+  /* padding:20px; */
+  padding-left: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 14px;
 }
@@ -203,15 +209,21 @@ input[type="submit"]{
 
 .container3{
   background-color: #005555;
-  height:20px;
+  height:10vh;
   width:100%;
   color: #ffffff;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size:14px;
-  padding-top:10px;
+  /* padding-top:10px; */
+  /* position: fixed; */
   text-align:center;
-  margin-top: 20px;
-  margin-bottom:10px;
+  /* margin-top: 20px; */
+  /* margin-bottom:10px; */
+}
+
+.container3 p{
+  /* background-color:blueviolet; */
+  line-height: 10vh;
 }
 
 #boxval{
@@ -312,7 +324,10 @@ hr{
 
 /* Card */
 .card{
-  margin:17px;
+  /* margin:17px; */
+  margin-top:5vh;
+  margin-bottom: 5vh;
+  margin-right: 5vh;
   min-height: 230px;
   border:thin;
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
@@ -349,17 +364,21 @@ hr{
   border-radius:5px;
 }
 
-.isicard hr,
-.isicard img{
-  width:35px;
-  height: 23px;
-  border-radius: 7px;
+/* .isicard hr, */
+/* .isicard img{ */
+  /* width:35px; */
+  /* height: 23px; */
+  /* border-radius: 7px;
   float: right;
-  background-color: #005555;
+  background-color: #005555; 
   color: #ffffff;
   text-align: center;
   font-weight: bold;
   font-size: 17px;
+} */
+
+.isicard img{
+  margin-top:10px;
 }
 
 .isicard big{
@@ -381,7 +400,8 @@ hr{
   color: #005555;
   padding: 4px 10px 5px;
   font-size: 14px;
-  margin: 0;
+  /* margin: 0; */
+  margin-right: 5vh;
   font-weight: bold;
 }
 
@@ -391,7 +411,8 @@ hr{
   color: #ffffff;
   padding: 4px 10px 5px;
   font-size: 14px;
-  margin: 0;
+  margin-right: 5vh;
+  /* margin: 0; */
   font-weight: bold;
 }
 
