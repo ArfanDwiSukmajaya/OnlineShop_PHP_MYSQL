@@ -7,12 +7,15 @@
 <?php 
 
   $sqlk = mysqli_query($kon, "SELECT * FROM kategori ORDER BY namakat ASC");
+
   
   while ($rk = mysqli_fetch_array($sqlk)) {
-
+    
     $sqlp = mysqli_query($kon, "SELECT * from produk WHERE id_kat='$rk[id_kat]'");
-
+    
+    // var_dump($rk);
     // $rowp = mysqli_num_rows($sqlp);
+    // var_dump($sqlp);
     
     echo "
       <div class='dh3'> 

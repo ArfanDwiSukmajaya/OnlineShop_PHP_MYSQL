@@ -131,7 +131,7 @@ input[type="submit"]{
   font-size:18px;
   color: #ffffff;
   display: block;
-  transition:0.3s;
+  transition:0.10s;
 }
 
 .sidenav a:hover{
