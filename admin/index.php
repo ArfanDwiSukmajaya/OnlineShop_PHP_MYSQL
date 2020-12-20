@@ -71,10 +71,14 @@
           include "jasakirimedit.php";
         }else if($_GET["p"]== "jasakirimdel"){
             include "jasakirimdel.php";
-          }else if($_GET["p"]== "anggota"){
+        }else if($_GET["p"]== "anggota"){
           include "anggota.php";
         }else if($_GET["p"]== "anggotadel"){
           include "anggotadel.php";
+        }else if($_GET["p"]== "order"){
+          include "order.php";
+        }else if($_GET["p"]== "orderdetail"){
+          include "orderdetail.php";
         }else{
           include "home.php";
         } 

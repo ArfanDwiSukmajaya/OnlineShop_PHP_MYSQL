@@ -4,7 +4,7 @@
   <form action="" method="post" name="form1" enctype="multipart/form-data">
     <h3>Administrator</h3>
     <p>Silahkan Login</p>
-    <input type="text" name="username" id="username" plaeceholder="Username">
+    <input type="text" name="username" id="username" placeholder="Username">
     <input type="text" name="password" id="password" placeholder="Password">
     <input type="submit" name="login" id="login" value="Login Admin">
   </form>
