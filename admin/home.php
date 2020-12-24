@@ -101,7 +101,7 @@
     <!-- Untuk Anggota -->
     <?php 
       $sqlag = mysqli_query($kon, "SELECT * FROM anggota");
-      $rowag = mysqli_num_rows($sqlp);
+      $rowag = mysqli_num_rows($sqlag);
       $sqlagl = mysqli_query($kon, "SELECT * FROM anggota ORDER BY tgldaftar DESC LIMIT 1");
     ?>
     <div class="dh3">
@@ -142,7 +142,7 @@
      <!-- Untuk Transaksi -->
      <?php 
       $sqlo = mysqli_query($kon, "SELECT * FROM orders");
-      $rowo = mysqli_num_rows($sqlp);
+      $rowo = mysqli_num_rows($sqlo);
       $sqlol = mysqli_query($kon, "SELECT * FROM orders  WHERE statusorder='Baru' ORDER BY tglorder DESC LIMIT 1");
     ?>
     <div class="dh3">
